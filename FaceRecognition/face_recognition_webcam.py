@@ -16,18 +16,18 @@ for filename in os.listdir(known_dir):
             known_encodings.append(encoding[0])
             known_names.append(os.path.splitext(filename)[0])
         else:
-            print(f"⚠️ Could not encode {filename}")
+            print(f"Could not encode {filename}")
 
-print("✅ Loaded known faces:", known_names)
+print("Loaded known faces:", known_names)
 
 # Start webcam
 cap = cv2.VideoCapture(0)
-print("📷 Webcam started. Press 'q' to quit.")
+print("Webcam started. Press 'q' to quit.")
 
 while True:
     ret, frame = cap.read()
     if not ret:
-        print("❌ Failed to grab frame")
+        print("Failed to grab frame")
         break
 
     small_frame = cv2.resize(frame, (0, 0), fx=0.25, fy=0.25)
@@ -57,7 +57,7 @@ while True:
     # Press 'q' to quit
     key = cv2.waitKey(1)
     if key == ord('q') or key == 27:  # 'q' or ESC to quit
-        print("👋 Quitting...")
+        print("Quitting...")
         break
 
 cap.release()

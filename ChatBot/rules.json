@@ -1,0 +1,7 @@
+[
+  { "pattern": "\\bhello\\b|\\bhi\\b|\\bhey\\b", "response": "Hi there! How can I help you today?" },
+  { "pattern": "\\bhow are you\\b", "response": "I'm doing great! Thanks for asking 😊" },
+  { "pattern": "\\bname\\b", "response": "I'm your friendly chatbot." },
+  { "pattern": "\\bhelp\\b", "response": "Sure, I can help! Just ask me anything." },
+  { "pattern": "\\bbye\\b|\\bgoodbye\\b", "response": "Goodbye! Have a great day." }
+]
